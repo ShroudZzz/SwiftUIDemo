@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  SwiftUI-Chapter2
-//
-//  Created by LBX-CL on 2023/6/25.
-//
-
 import SwiftUI
 
 struct ContentView: View {

@@ -1,11 +1,3 @@
-//
-//  Helpers.swift
-//  PokeMaster
-//
-//  Created by Wang Wei on 2019/08/20.
-//  Copyright © 2019 OneV's Den. All rights reserved.
-//
-
 import Foundation
 import SwiftUI
 

@@ -75,6 +75,7 @@
 		CE75437A2A4D58C600846425 /* pokemon-species-4.json in Resources */ = {isa = PBXBuildFile; fileRef = CE75433B2A4D58C600846425 /* pokemon-species-4.json */; };
 		CE75437B2A4D58C600846425 /* ability-34.json in Resources */ = {isa = PBXBuildFile; fileRef = CE75433D2A4D58C600846425 /* ability-34.json */; };
 		CE75437C2A4D58C600846425 /* ability-65.json in Resources */ = {isa = PBXBuildFile; fileRef = CE75433E2A4D58C600846425 /* ability-65.json */; };
+		CE7543802A4D5A1200846425 /* PokemonInfoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE75437F2A4D5A1200846425 /* PokemonInfoRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -147,6 +148,7 @@
 		CE75433B2A4D58C600846425 /* pokemon-species-4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "pokemon-species-4.json"; sourceTree = "<group>"; };
 		CE75433D2A4D58C600846425 /* ability-34.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "ability-34.json"; sourceTree = "<group>"; };
 		CE75433E2A4D58C600846425 /* ability-65.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "ability-65.json"; sourceTree = "<group>"; };
+		CE75437F2A4D5A1200846425 /* PokemonInfoRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonInfoRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +181,8 @@
 		CE7542E72A4D54BF00846425 /* SwiftUI-Chapter4 */ = {
 			isa = PBXGroup;
 			children = (
+				CE75437E2A4D59FA00846425 /* ViewModel */,
+				CE75437D2A4D59F100846425 /* View */,
 				CE7542FD2A4D58C600846425 /* JSON */,
 				CE7542F62A4D587700846425 /* Utils */,
 				CE7542E82A4D54BF00846425 /* SwiftUI_Chapter4App.swift */,
@@ -297,6 +301,21 @@
 				CE75433E2A4D58C600846425 /* ability-65.json */,
 			);
 			path = abilities;
+			sourceTree = "<group>";
+		};
+		CE75437D2A4D59F100846425 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE75437F2A4D5A1200846425 /* PokemonInfoRow.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE75437E2A4D59FA00846425 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -435,6 +454,7 @@
 				CE7542F92A4D589600846425 /* Helpers.swift in Sources */,
 				CE7542E92A4D54BF00846425 /* SwiftUI_Chapter4App.swift in Sources */,
 				CE7542FA2A4D589600846425 /* FileHelper.swift in Sources */,
+				CE7543802A4D5A1200846425 /* PokemonInfoRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -560,10 +580,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI-Chapter4/Preview Content\"";
-				DEVELOPMENT_TEAM = R8K9Q22ACU;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -578,6 +598,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Test.SwiftUI-Chapter4";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -589,10 +610,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI-Chapter4/Preview Content\"";
-				DEVELOPMENT_TEAM = R8K9Q22ACU;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -607,6 +628,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Test.SwiftUI-Chapter4";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

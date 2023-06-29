@@ -1,11 +1,3 @@
-//
-//  FileHelper.swift
-//  PokeMaster
-//
-//  Created by 王 巍 on 2019/08/22.
-//  Copyright © 2019 OneV's Den. All rights reserved.
-//
-
 import Foundation
 
 enum FileHelper {
