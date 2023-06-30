@@ -7,3 +7,9 @@ struct SettingRootView: View {
         }
     }
 }
+
+struct SettingRootView_Previews: PreviewProvider {
+    static var previews: some View {
+        SettingRootView()
+    }
+}
