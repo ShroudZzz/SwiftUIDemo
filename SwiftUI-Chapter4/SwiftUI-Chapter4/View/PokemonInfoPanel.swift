@@ -1,5 +1,38 @@
 import SwiftUI
+import UIKit
 
+struct BlurView: UIViewRepresentable {
+    let style: UIBlurEffect.Style
+    
+    func makeUIView(context: Context) -> some UIView {
+        let view = UIView(frame: .zero)
+        view.backgroundColor = .clear
+        let blurEffect = UIBlurEffect(style: style)
+        let blurView = UIVisualEffectView(effect: blurEffect)
+        blurView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(blurView)
+        NSLayoutConstraint.activate([
+            blurView.heightAnchor
+              .constraint(equalTo: view.heightAnchor),
+            blurView.widthAnchor
+              .constraint(equalTo: view.widthAnchor)
+        ])
+        return view
+    }
+    
+    func updateUIView(_ uiView: UIViewType, context: Context) {
+        
+    }
+}
+
+extension View {
+    func blurBackground(style: UIBlurEffect.Style) -> some View {
+        ZStack {
+            BlurView(style: style)
+            self
+        }
+    }
+}
 
 struct PokemonInfoPanel: View {
     
@@ -16,7 +49,7 @@ struct PokemonInfoPanel: View {
     }
     
     var pokemonDescription: some View {
-        Text(model.descriptionText)
+        Text(model.descriptionTextEN)
             .font(.callout)
             .foregroundColor(Color(hex: 0x666666))
             .fixedSize(horizontal: false, vertical: true)
@@ -24,10 +57,17 @@ struct PokemonInfoPanel: View {
     
     var body: some View {
         VStack(spacing: 20) {
-            topIndicator
-            Header(model: model)
-            pokemonDescription
-        }
+            VStack {
+                topIndicator
+                Header(model: model)
+                pokemonDescription
+                Divider()
+                AblilityList(model: model, abilityModels: abilities)
+            }
+        }.padding(EdgeInsets(top: 12, leading: 20, bottom: 30, trailing: 30))
+            .blurBackground(style: .systemMaterial)
+            .cornerRadius(20)
+            .fixedSize(horizontal: false, vertical: true)
     }
 }
 
@@ -122,6 +162,34 @@ struct BodyStatusTagResultModifier: ViewModifier {
     func body(content: Content) -> some View {
         content.font(.system(size: 11))
             .foregroundColor(model.color)
+    }
+}
+
+extension PokemonInfoPanel {
+    struct AblilityList: View {
+        let model: PokemonViewModel
+        
+        let abilityModels: [AbilityViewModel]?
+        
+        var body: some View {
+            VStack(alignment: .leading, spacing: 12) {
+                Text("技能")
+                    .font(.headline)
+                    .fontWeight(.bold)
+                
+                if abilityModels != nil {
+                    ForEach(abilityModels!) { ability in
+                        Text(ability.name)
+                            .font(.subheadline)
+                            .foregroundColor(model.color)
+                        Text(ability.descriptionText)
+                            .font(.footnote)
+                            .foregroundColor(Color(hex: 0xAAAAAA))
+                            .fixedSize(horizontal: false, vertical: true)
+                    }
+                }
+            }.frame(maxWidth: .infinity, alignment: .leading)
+        }
     }
 }
 
