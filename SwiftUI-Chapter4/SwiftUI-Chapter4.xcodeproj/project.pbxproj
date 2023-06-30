@@ -334,11 +334,11 @@
 			isa = PBXGroup;
 			children = (
 				CE75437F2A4D5A1200846425 /* PokemonInfoRow.swift */,
-				CE7543912A4D890B00846425 /* PokemonList.swift */,
 				CE2A59C12A4EA840005F9AE4 /* PokemonInfoPanel.swift */,
+				CE7543912A4D890B00846425 /* PokemonList.swift */,
+				CE2A59CA2A4ECF9F005F9AE4 /* PokemonRootView.swift */,
 				CE2A59C62A4EC55C005F9AE4 /* SettingView.swift */,
 				CE2A59C82A4ECDC7005F9AE4 /* SettingRootView.swift */,
-				CE2A59CA2A4ECF9F005F9AE4 /* PokemonRootView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
