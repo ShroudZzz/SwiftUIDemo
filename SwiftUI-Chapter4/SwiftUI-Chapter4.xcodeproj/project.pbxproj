@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE2A59C22A4EA840005F9AE4 /* PokemonInfoPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2A59C12A4EA840005F9AE4 /* PokemonInfoPanel.swift */; };
 		CE7542E92A4D54BF00846425 /* SwiftUI_Chapter4App.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7542E82A4D54BF00846425 /* SwiftUI_Chapter4App.swift */; };
 		CE7542EB2A4D54BF00846425 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7542EA2A4D54BF00846425 /* ContentView.swift */; };
 		CE7542ED2A4D54C000846425 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE7542EC2A4D54C000846425 /* Assets.xcassets */; };
@@ -87,6 +88,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE2A59C12A4EA840005F9AE4 /* PokemonInfoPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonInfoPanel.swift; sourceTree = "<group>"; };
 		CE7542E52A4D54BF00846425 /* SwiftUI-Chapter4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Chapter4.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE7542E82A4D54BF00846425 /* SwiftUI_Chapter4App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_Chapter4App.swift; sourceTree = "<group>"; };
 		CE7542EA2A4D54BF00846425 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -325,6 +327,7 @@
 			children = (
 				CE75437F2A4D5A1200846425 /* PokemonInfoRow.swift */,
 				CE7543912A4D890B00846425 /* PokemonList.swift */,
+				CE2A59C12A4EA840005F9AE4 /* PokemonInfoPanel.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -488,6 +491,7 @@
 				CE75438A2A4D5D2300846425 /* Ability.swift in Sources */,
 				CE7542EB2A4D54BF00846425 /* ContentView.swift in Sources */,
 				CE7542F92A4D589600846425 /* Helpers.swift in Sources */,
+				CE2A59C22A4EA840005F9AE4 /* PokemonInfoPanel.swift in Sources */,
 				CE7543822A4D5C1E00846425 /* PokemonViewModel.swift in Sources */,
 				CE7543882A4D5D0600846425 /* PokemonSpecies.swift in Sources */,
 				CE75438E2A4D5D7F00846425 /* AbilityViewModel.swift in Sources */,
