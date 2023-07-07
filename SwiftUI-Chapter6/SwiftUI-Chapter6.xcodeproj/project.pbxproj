@@ -14,6 +14,7 @@
 		CE2730342A52C53E009DDCFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE2730332A52C53E009DDCFF /* Assets.xcassets */; };
 		CE2730372A52C53E009DDCFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE2730352A52C53E009DDCFF /* LaunchScreen.storyboard */; };
 		CE27303F2A52CD31009DDCFF /* BasePublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE27303E2A52CD31009DDCFF /* BasePublisher.swift */; };
+		CE5959F52A57DFC400E6FDB0 /* progress.png in Resources */ = {isa = PBXBuildFile; fileRef = CE5959F42A57DFC400E6FDB0 /* progress.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		CE2730362A52C53E009DDCFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE2730382A52C53E009DDCFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE27303E2A52CD31009DDCFF /* BasePublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePublisher.swift; sourceTree = "<group>"; };
+		CE5959F42A57DFC400E6FDB0 /* progress.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = progress.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				CE27302A2A52C53D009DDCFF /* AppDelegate.swift */,
 				CE27302C2A52C53D009DDCFF /* SceneDelegate.swift */,
 				CE27302E2A52C53D009DDCFF /* ViewController.swift */,
+				CE5959F42A57DFC400E6FDB0 /* progress.png */,
 				CE2730302A52C53D009DDCFF /* Main.storyboard */,
 				CE2730332A52C53E009DDCFF /* Assets.xcassets */,
 				CE2730352A52C53E009DDCFF /* LaunchScreen.storyboard */,
@@ -128,6 +131,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE5959F52A57DFC400E6FDB0 /* progress.png in Resources */,
 				CE2730372A52C53E009DDCFF /* LaunchScreen.storyboard in Resources */,
 				CE2730342A52C53E009DDCFF /* Assets.xcassets in Resources */,
 				CE2730322A52C53D009DDCFF /* Main.storyboard in Resources */,
