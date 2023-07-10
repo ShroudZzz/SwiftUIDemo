@@ -4,6 +4,8 @@ struct PokemonList: View {
 
     @State var expandingIndex: Int?
     @State var searchText: String = ""
+    
+    @EnvironmentObject var store: Store
 
     var body: some View {
         ScrollView {
@@ -11,7 +13,9 @@ struct PokemonList: View {
                 TextField("搜索", text: $searchText)
                     .frame(height: 40)
                     .padding(.horizontal, 25)
-                ForEach(PokemonViewModel.all) { pokemon in
+                //ForEach(PokemonViewModel.all) {
+                ForEach(store.appState.pokemonList.allPokemonsById) {
+                    pokemon in
                     PokemonInfoRow(
                         model: pokemon,
                         expanded: self.expandingIndex == pokemon.id

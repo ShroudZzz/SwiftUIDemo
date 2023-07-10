@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE3FE1C52A5BF83D0015C29F /* LoadPokemonRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3FE1C42A5BF83D0015C29F /* LoadPokemonRequest.swift */; };
+		CE3FE1C72A5BFD390015C29F /* LoadPokemonsCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3FE1C62A5BFD390015C29F /* LoadPokemonsCommand.swift */; };
 		CE7CBB4D2A5BD094006B5D1F /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7CBB4C2A5BD094006B5D1F /* LoginRequest.swift */; };
 		CE7CBB502A5BD39B006B5D1F /* AppCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7CBB4F2A5BD39B006B5D1F /* AppCommand.swift */; };
 		CE7CBB522A5BD575006B5D1F /* SubscriptionToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7CBB512A5BD575006B5D1F /* SubscriptionToken.swift */; };
 		CE7CBB572A5BDC55006B5D1F /* FileStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7CBB562A5BDC55006B5D1F /* FileStorage.swift */; };
+		CE7CBB592A5BE47E006B5D1F /* EmailCheckingRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7CBB582A5BE47E006B5D1F /* EmailCheckingRequest.swift */; };
 		CEA11C652A5809BE000A73CD /* AppAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA11C642A5809BE000A73CD /* AppAction.swift */; };
 		CEB439D42A57F11E008E36AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEB4396E2A57F11D008E36AC /* Assets.xcassets */; };
 		CEB439D52A57F11E008E36AC /* FileHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB439702A57F11D008E36AC /* FileHelper.swift */; };
@@ -106,10 +109,13 @@
 
 /* Begin PBXFileReference section */
 		4B9EAF6823162D9900B72082 /* SwiftUI-Chapter8.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Chapter8.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE3FE1C42A5BF83D0015C29F /* LoadPokemonRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadPokemonRequest.swift; sourceTree = "<group>"; };
+		CE3FE1C62A5BFD390015C29F /* LoadPokemonsCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadPokemonsCommand.swift; sourceTree = "<group>"; };
 		CE7CBB4C2A5BD094006B5D1F /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
 		CE7CBB4F2A5BD39B006B5D1F /* AppCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCommand.swift; sourceTree = "<group>"; };
 		CE7CBB512A5BD575006B5D1F /* SubscriptionToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionToken.swift; sourceTree = "<group>"; };
 		CE7CBB562A5BDC55006B5D1F /* FileStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileStorage.swift; sourceTree = "<group>"; };
+		CE7CBB582A5BE47E006B5D1F /* EmailCheckingRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailCheckingRequest.swift; sourceTree = "<group>"; };
 		CEA11C642A5809BE000A73CD /* AppAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAction.swift; sourceTree = "<group>"; };
 		CEB4396E2A57F11D008E36AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEB439702A57F11D008E36AC /* FileHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileHelper.swift; sourceTree = "<group>"; };
@@ -235,6 +241,8 @@
 			isa = PBXGroup;
 			children = (
 				CE7CBB4C2A5BD094006B5D1F /* LoginRequest.swift */,
+				CE7CBB582A5BE47E006B5D1F /* EmailCheckingRequest.swift */,
+				CE3FE1C42A5BF83D0015C29F /* LoadPokemonRequest.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -244,6 +252,7 @@
 			children = (
 				CE7CBB4F2A5BD39B006B5D1F /* AppCommand.swift */,
 				CE7CBB512A5BD575006B5D1F /* SubscriptionToken.swift */,
+				CE3FE1C62A5BFD390015C29F /* LoadPokemonsCommand.swift */,
 			);
 			path = Command;
 			sourceTree = "<group>";
@@ -649,11 +658,14 @@
 				CEB439D72A57F11E008E36AC /* Helpers.swift in Sources */,
 				CEB43A1B2A57F11E008E36AC /* Ability.swift in Sources */,
 				CEB43A1A2A57F11E008E36AC /* Language.swift in Sources */,
+				CE3FE1C52A5BF83D0015C29F /* LoadPokemonRequest.swift in Sources */,
+				CE7CBB592A5BE47E006B5D1F /* EmailCheckingRequest.swift in Sources */,
 				CEB43A212A57F11E008E36AC /* BlurView.swift in Sources */,
 				CEB43A302A57FA4B008E36AC /* AppState.swift in Sources */,
 				CEB43A1D2A57F11E008E36AC /* PokemonSpecies.swift in Sources */,
 				CE7CBB502A5BD39B006B5D1F /* AppCommand.swift in Sources */,
 				CEB43A252A57F11E008E36AC /* SettingRootView.swift in Sources */,
+				CE3FE1C72A5BFD390015C29F /* LoadPokemonsCommand.swift in Sources */,
 				CEB439D62A57F11E008E36AC /* Sample.swift in Sources */,
 				CE7CBB522A5BD575006B5D1F /* SubscriptionToken.swift in Sources */,
 				CEB43A182A57F11E008E36AC /* AbilityViewModel.swift in Sources */,
