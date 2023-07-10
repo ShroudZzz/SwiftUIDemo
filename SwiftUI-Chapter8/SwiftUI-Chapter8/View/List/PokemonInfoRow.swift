@@ -1,4 +1,5 @@
 import SwiftUI
+import Kingfisher
 
 struct PokemonInfoRow: View {
     let model: PokemonViewModel
@@ -7,7 +8,7 @@ struct PokemonInfoRow: View {
     var body: some View {
         VStack {
             HStack {
-                Image("Pokemon-\(model.id)")
+                KFImage(model.iconImageURL)
                     .resizable()
                     .frame(width: 50, height: 50)
                     .aspectRatio(contentMode: .fit)
