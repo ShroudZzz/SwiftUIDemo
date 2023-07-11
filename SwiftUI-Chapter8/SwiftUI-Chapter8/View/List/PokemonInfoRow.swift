@@ -5,6 +5,8 @@ struct PokemonInfoRow: View {
     let model: PokemonViewModel
     let expanded: Bool
 
+    @EnvironmentObject var store: Store
+    
     var body: some View {
         VStack {
             HStack {
@@ -28,17 +30,29 @@ struct PokemonInfoRow: View {
             Spacer()
             HStack(spacing: expanded ? 20 : -30) {
                 Spacer()
-                Button(action: {}) {
+                Button(action: {
+                    
+                }) {
                     Image(systemName: "star")
                         .modifier(ToolButtonModifier())
                 }
-                Button(action: {}) {
+                Button(action: {
+                    let target = !self.store.appState.pokemonList.selectionState.panelPresented
+                    self.store.dispatch(.togglePanelPresenting(presenting: target))
+                }) {
                     Image(systemName: "chart.bar")
                         .modifier(ToolButtonModifier())
                 }
-                Button(action: {}) {
+
+                NavigationLink(isActive: expanded ? $store.appState.pokemonList.isSFViewActive : .constant(false)) {
+                    SafariView(url: model.detailPageURL) {
+                        self.store.dispatch(.closeSafariView)
+                    }
+                        .navigationTitle(model.name)
+                        .navigationBarTitleDisplayMode(.inline)
+                } label: {
                     Image(systemName: "info.circle")
-                        .modifier(ToolButtonModifier())
+                              .modifier(ToolButtonModifier())
                 }
             }
             .padding(.bottom, 12)

@@ -4,6 +4,7 @@ import Combine
 struct AppState {
     var settings = Settings()
     var pokemonList = PokemonList()
+    var mainTab = MainTab()
 }
 
 extension AppState {
@@ -97,5 +98,29 @@ extension AppState {
             }
             return pokemons.sorted{ $0.id < $1.id }
         }
+        
+        struct SelectionState {
+            var expandingIndex: Int? = nil
+            var panelIndex: Int? = nil
+            var panelPresented = false
+            
+            func isExpanding(_ id: Int) -> Bool {
+                expandingIndex == id
+            }
+        }
+        
+        var selectionState = SelectionState()
+        
+        var isSFViewActive = false
+    }
+}
+
+extension AppState {
+    struct MainTab {
+        enum Index: Hashable {
+            case list, settings
+        }
+        
+        var selection: Index = .list
     }
 }

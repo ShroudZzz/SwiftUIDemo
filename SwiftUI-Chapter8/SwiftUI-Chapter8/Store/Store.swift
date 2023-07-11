@@ -53,6 +53,19 @@ class Store: ObservableObject {
             case .failure(let error):
                 print(error)
             }
+        case .togglePanelPresenting(let presenting):
+            appState.pokemonList.selectionState.panelPresented = presenting
+        case .toggleListSelection(let index):
+            let expanding = appState.pokemonList.selectionState.expandingIndex
+            if expanding == index {
+                appState.pokemonList.selectionState.expandingIndex = nil
+                appState.pokemonList.selectionState.panelPresented = false
+            } else {
+                appState.pokemonList.selectionState.expandingIndex = index
+                appState.pokemonList.selectionState.panelIndex = index
+            }
+        case .closeSafariView:
+            appState.pokemonList.isSFViewActive = false
         }
         return (appState, appCommand)
     }

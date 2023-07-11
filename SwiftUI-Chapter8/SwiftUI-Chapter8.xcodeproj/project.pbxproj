@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE1E0C042A5D23ED0000013C /* OverlaySheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1E0C032A5D23ED0000013C /* OverlaySheet.swift */; };
 		CE3FE1C52A5BF83D0015C29F /* LoadPokemonRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3FE1C42A5BF83D0015C29F /* LoadPokemonRequest.swift */; };
 		CE3FE1C72A5BFD390015C29F /* LoadPokemonsCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3FE1C62A5BFD390015C29F /* LoadPokemonsCommand.swift */; };
 		CE4EB1E82A5C0791007DBD62 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = CE4EB1E72A5C0791007DBD62 /* Kingfisher */; };
@@ -15,6 +16,7 @@
 		CE7CBB522A5BD575006B5D1F /* SubscriptionToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7CBB512A5BD575006B5D1F /* SubscriptionToken.swift */; };
 		CE7CBB572A5BDC55006B5D1F /* FileStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7CBB562A5BDC55006B5D1F /* FileStorage.swift */; };
 		CE7CBB592A5BE47E006B5D1F /* EmailCheckingRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7CBB582A5BE47E006B5D1F /* EmailCheckingRequest.swift */; };
+		CEA0C7942A5D3658001681D1 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA0C7932A5D3658001681D1 /* SafariView.swift */; };
 		CEA11C652A5809BE000A73CD /* AppAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA11C642A5809BE000A73CD /* AppAction.swift */; };
 		CEB439D42A57F11E008E36AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEB4396E2A57F11D008E36AC /* Assets.xcassets */; };
 		CEB439D52A57F11E008E36AC /* FileHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB439702A57F11D008E36AC /* FileHelper.swift */; };
@@ -110,6 +112,7 @@
 
 /* Begin PBXFileReference section */
 		4B9EAF6823162D9900B72082 /* SwiftUI-Chapter8.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Chapter8.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE1E0C032A5D23ED0000013C /* OverlaySheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlaySheet.swift; sourceTree = "<group>"; };
 		CE3FE1C42A5BF83D0015C29F /* LoadPokemonRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadPokemonRequest.swift; sourceTree = "<group>"; };
 		CE3FE1C62A5BFD390015C29F /* LoadPokemonsCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadPokemonsCommand.swift; sourceTree = "<group>"; };
 		CE7CBB4C2A5BD094006B5D1F /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
@@ -117,6 +120,7 @@
 		CE7CBB512A5BD575006B5D1F /* SubscriptionToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionToken.swift; sourceTree = "<group>"; };
 		CE7CBB562A5BDC55006B5D1F /* FileStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileStorage.swift; sourceTree = "<group>"; };
 		CE7CBB582A5BE47E006B5D1F /* EmailCheckingRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailCheckingRequest.swift; sourceTree = "<group>"; };
+		CEA0C7932A5D3658001681D1 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
 		CEA11C642A5809BE000A73CD /* AppAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAction.swift; sourceTree = "<group>"; };
 		CEB4396E2A57F11D008E36AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEB439702A57F11D008E36AC /* FileHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileHelper.swift; sourceTree = "<group>"; };
@@ -461,6 +465,8 @@
 			isa = PBXGroup;
 			children = (
 				CEB439C82A57F11D008E36AC /* BlurView.swift */,
+				CE1E0C032A5D23ED0000013C /* OverlaySheet.swift */,
+				CEA0C7932A5D3658001681D1 /* SafariView.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -647,6 +653,7 @@
 			files = (
 				CE7CBB4D2A5BD094006B5D1F /* LoginRequest.swift in Sources */,
 				CEB439D52A57F11E008E36AC /* FileHelper.swift in Sources */,
+				CE1E0C042A5D23ED0000013C /* OverlaySheet.swift in Sources */,
 				CEB43A242A57F11E008E36AC /* PokemonList.swift in Sources */,
 				CE7CBB572A5BDC55006B5D1F /* FileStorage.swift in Sources */,
 				CEB43A2D2A57F6CE008E36AC /* MainTab.swift in Sources */,
@@ -678,6 +685,7 @@
 				CE7CBB522A5BD575006B5D1F /* SubscriptionToken.swift in Sources */,
 				CEB43A182A57F11E008E36AC /* AbilityViewModel.swift in Sources */,
 				CEB43A232A57F11E008E36AC /* PokemonInfoRow.swift in Sources */,
+				CEA0C7942A5D3658001681D1 /* SafariView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
