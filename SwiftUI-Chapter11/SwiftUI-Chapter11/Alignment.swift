@@ -15,9 +15,9 @@ struct AligmentView: View {
     @State var selectedIndex = 0
 
     let names = [
-        "onevcat | Wei Wang",
-        "zaq | Hao Zang",
-        "tyyqa | Lixiao Yang"
+        "TextZzzz",
+        "ShroudZzz",
+        "GewenZzz"
     ]
 
     var body: some View {
@@ -26,22 +26,33 @@ struct AligmentView: View {
           .font(.footnote)
           .foregroundColor(.green)
           .alignmentGuide(.select) { d in
-              d[.bottom] //+ CGFloat(self.selectedIndex) * 20.3
+              print("sss-u",d[VerticalAlignment.center])
+              return d[VerticalAlignment.bottom] //+ CGFloat(self.selectedIndex) * 20.3
+          }.background(Color.gray)
+          VStack(alignment: .trailing) {
+              Image(systemName: "person.circle")
+                .foregroundColor(.green)
+                .alignmentGuide(.select) { d in
+                    print("sss-i",d[VerticalAlignment.center])
+                  return d[VerticalAlignment.center]
+                }
+              Image(systemName: "person.circle")
+                .foregroundColor(.green)
+                .alignmentGuide(.select) { d in
+                    print("sss-i",d[VerticalAlignment.center])
+                  return d[VerticalAlignment.center]
+                }
           }
-        Image(systemName: "person.circle")
-          .foregroundColor(.green)
-          .alignmentGuide(.select) { d in
-            d[VerticalAlignment.center]
-          }
-        VStack(alignment: .leading) {
+        VStack(alignment: .trailing) {
           ForEach(0..<names.count) { index in
             Text(self.names[index])
               .foregroundColor(self.selectedIndex == index ? .green : .black)
               .alignmentGuide(self.selectedIndex == index ? .select : .center) { d in
                 if self.selectedIndex == index {
+                    print("sss-n",d[VerticalAlignment.center])
                   return d[VerticalAlignment.center]
                 } else {
-                  return 0
+                  return d[VerticalAlignment.center]
                 }
               }.onTapGesture {
                 self.selectedIndex = index

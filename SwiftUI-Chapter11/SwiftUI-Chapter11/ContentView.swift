@@ -2,28 +2,29 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        
-        VStack {
-            HStack {
-                Image(systemName: "person.circle")
-                Text("User:")
-                Text("Shroud")
-            }
-            .lineLimit(1)
-            
-            HStack {
-                Image(systemName: "person.circle")
-                    .background(Color.yellow)
-                Text("User:")
-                    .background(Color.red)
-                Text("onevcat | Wei Wang")
-                    .layoutPriority(1) //.layoutPriority，控制计算布局的优先级
-                    .background(Color.green)
-            }
-            .lineLimit(1)
-            .fixedSize() //User will show  被修饰的 View 使用它在无约束下原本应有的理想尺寸
-            .frame(width: 200)
-        }
+        //AligmentView()
+        CustomView()
+//        VStack {
+//            HStack {
+//                Image(systemName: "person.circle")
+//                Text("User:")
+//                Text("Shroud")
+//            }
+//            .lineLimit(1)
+//            
+//            HStack {
+//                Image(systemName: "person.circle")
+//                    .background(Color.yellow)
+//                Text("User:")
+//                    .background(Color.red)
+//                Text("onevcat | Wei Wang")
+//                    .layoutPriority(1) //.layoutPriority，控制计算布局的优先级
+//                    .background(Color.green)
+//            }
+//            .lineLimit(1)
+//            .fixedSize() //User will show  被修饰的 View 使用它在无约束下原本应有的理想尺寸
+//            .frame(width: 200)
+//        }
     }
 }
 
