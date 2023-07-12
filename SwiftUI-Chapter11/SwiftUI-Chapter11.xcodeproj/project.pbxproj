@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CE4AD4572A5E8A550070527B /* Alignment2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4AD4562A5E8A550070527B /* Alignment2.swift */; };
+		CE4AD4592A5E8E930070527B /* Alignment3.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4AD4582A5E8E930070527B /* Alignment3.swift */; };
 		CEA0C7A22A5D477B001681D1 /* SwiftUI_Chapter11App.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA0C7A12A5D477B001681D1 /* SwiftUI_Chapter11App.swift */; };
 		CEA0C7A42A5D477B001681D1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA0C7A32A5D477B001681D1 /* ContentView.swift */; };
 		CEA0C7A62A5D477C001681D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEA0C7A52A5D477C001681D1 /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		CE4AD4562A5E8A550070527B /* Alignment2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alignment2.swift; sourceTree = "<group>"; };
+		CE4AD4582A5E8E930070527B /* Alignment3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alignment3.swift; sourceTree = "<group>"; };
 		CEA0C79E2A5D477B001681D1 /* SwiftUI-Chapter11.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Chapter11.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEA0C7A12A5D477B001681D1 /* SwiftUI_Chapter11App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_Chapter11App.swift; sourceTree = "<group>"; };
 		CEA0C7A32A5D477B001681D1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 		CEA0C7A02A5D477B001681D1 /* SwiftUI-Chapter11 */ = {
 			isa = PBXGroup;
 			children = (
+				CE4AD4582A5E8E930070527B /* Alignment3.swift */,
 				CEA0C7A12A5D477B001681D1 /* SwiftUI_Chapter11App.swift */,
 				CEA0C7A32A5D477B001681D1 /* ContentView.swift */,
 				CEA0C7AF2A5D47C7001681D1 /* TriangleArrow.swift */,
@@ -157,6 +160,7 @@
 				CE4AD4572A5E8A550070527B /* Alignment2.swift in Sources */,
 				CEA0C7A42A5D477B001681D1 /* ContentView.swift in Sources */,
 				CEA0C7A22A5D477B001681D1 /* SwiftUI_Chapter11App.swift in Sources */,
+				CE4AD4592A5E8E930070527B /* Alignment3.swift in Sources */,
 				CEA0C7B02A5D47C7001681D1 /* TriangleArrow.swift in Sources */,
 				CEA0C7B22A5D502E001681D1 /* FlowRectangle.swift in Sources */,
 			);
